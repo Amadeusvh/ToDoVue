@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <h1>Teste</h1>
+      <h1>Estou brilhando</h1>
       <to-do-header />
       <to-do-title />
       <cont-to-do />
