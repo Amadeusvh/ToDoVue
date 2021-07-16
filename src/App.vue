@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-main>
+      <to-do-header />
+      <to-do-title />
+      <cont-to-do />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ContToDo from "./components/ContToDo.vue";
+import ToDoHeader from "./components/ToDoHeader.vue";
+import ToDoTitle from "./components/ToDoTitle.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    ToDoTitle,
+    ToDoHeader,
+    ContToDo,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
